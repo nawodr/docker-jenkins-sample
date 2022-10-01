@@ -17,6 +17,11 @@ public class DockerJenkinsSampleApplication {
 
     @GetMapping
     public String test(){
+        return "hello";
+    }
+
+    @GetMapping("/jenkins")
+    public String testJenkins(){
         return "hello jenkins";
     }
 
