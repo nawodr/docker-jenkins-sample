@@ -1,4 +1,4 @@
 FROM openjdk:11
-ADD target/docker-jenkin-sample.jar docker-jenkin-sample.jar
 EXPOSE 8090
-ENTRYPOINT ["java","-jar","/docker-jenkin-sample.jar"]
+ADD target/docker-jenkins-sample.jar docker-jenkins-sample.jar
+ENTRYPOINT ["java","-jar","/docker-jenkins-sample.jar"]
